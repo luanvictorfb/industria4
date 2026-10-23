@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Unbounded:wght@200..900&display=swap");
+@import "tailwindcss";
+
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-corpo), "Montserrat", sans-serif;
+  background-color: var(--color-fundo);
+  color: var(--color-texto);
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE 10+ */
+}
+
+/* Ocultar barra de scroll padrão no Chrome/Safari/Edge */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+@theme {
+
+    --color-fundo: #0b1220;
+    --color-superficie: #141e33;
+    --color-borda: #24324f;
+
+
+    --color-primaria: #F05A22;
+    --color-primaria-escura: #0ea5c4;
+    --color-alerta: #ff8a1f;
+
+
+    --color-texto: #e6edf7;
+    --color-texto-suave: #94a3b8;
+
+
+    --color-natura: #10b981;
+    --color-lenovo: #ef4444;
+
+    /* Fontes */
+    --font-titulo: "Unbounded", sans-serif;
+    --font-corpo: "Montserrat", sans-serif;
+}
+
+@layer utilities {
+    .flex-center {
+        @apply flex justify-center items-center;
+    }
+    .col-center {
+        @apply flex flex-col justify-center items-center;
+    }
+    .abs-center {
+        @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
+    }
+    .general-title {
+        @apply 2xl:text-[7rem] lg:text-7xl md:text-5xl text-3xl font-bold uppercase tracking-tight font-titulo;
+    }
+    .texto {
+        @apply text-texto-suave text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed md:leading-loose font-corpo text-left md:text-justify max-w-4xl mx-auto;
+    }
+}
