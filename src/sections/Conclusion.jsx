@@ -7,15 +7,15 @@ function Conclusion() {
 
     useGSAP(
         () => {
-            gsap.from(".conclusion-anim", {
+            gsap.from(".conclusion-element", {
                 opacity: 0,
-                y: 35,
+                y: 40,
                 stagger: 0.15,
-                duration: 0.8,
+                duration: 0.9,
                 ease: "power2.out",
                 scrollTrigger: {
                     trigger: sectionRef.current,
-                    start: "top 70%",
+                    start: "top 75%",
                 },
             });
         },
@@ -26,54 +26,62 @@ function Conclusion() {
         <section
             id="conclusao"
             ref={sectionRef}
-            className="w-full py-20 md:py-32 px-4 sm:px-6 lg:px-8 border-t border-borda/40 relative"
+            className="w-full py-24 sm:py-36 px-4 sm:px-8 lg:px-12 border-b border-borda/60 relative"
         >
-            <div className="max-w-5xl mx-auto flex flex-col gap-12 sm:gap-16">
-                {/* Header da Seção */}
-                <div className="conclusion-anim flex flex-col gap-3">
-                    <div className="flex items-center gap-3">
-                        <span className="text-primaria font-mono text-sm tracking-widest uppercase">
-                            05 // CONSIDERAÇÕES FINAIS
-                        </span>
-                        <div className="h-[1px] flex-1 bg-borda" />
-                    </div>
-                    <h2 className="font-titulo text-texto text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight">
-                        Conclusão
+            <div className="max-w-7xl mx-auto flex flex-col gap-16">
+                {/* Linha de Identificação */}
+                <div className="conclusion-element flex items-center justify-between border-b border-borda/60 pb-4 font-mono text-[11px] uppercase tracking-[0.25em] text-texto-suave">
+                    <span className="text-primaria">[ 05 // CONSIDERAÇÕES FINAIS ]</span>
+                    <span>SÍNTESE DA TESE & PERSPECTIVAS</span>
+                </div>
+
+                {/* Bloco de Conclusão / Manifesto Tipográfico */}
+                <div className="conclusion-element flex flex-col gap-6 max-w-5xl">
+                    <span className="font-mono text-xs text-primaria uppercase tracking-widest block">
+                        // SÍNTESE ESTRUTURAL
+                    </span>
+                    <h2 className="font-titulo text-texto text-3xl sm:text-6xl lg:text-7xl font-black uppercase tracking-tight leading-[1.05]">
+                        A IA como o Cérebro das Operações
                     </h2>
                 </div>
 
-                {/* Card de Destaque Síntese */}
-                <div className="conclusion-anim p-6 sm:p-10 rounded-3xl bg-gradient-to-br from-superficie via-superficie/90 to-borda/20 border border-primaria/40 shadow-2xl relative overflow-hidden">
-                    <div className="absolute top-0 right-0 w-72 h-72 bg-primaria/10 rounded-full blur-3xl pointer-events-none" />
-
-                    <div className="flex flex-col gap-6 relative z-10">
-                        <span className="text-primaria text-xs font-mono font-bold tracking-widest uppercase">
-                            A ESPINHA DORSAL DA INDÚSTRIA 4.0
-                        </span>
-
-                        <p className="texto !w-full !max-w-none text-base sm:text-xl lg:text-2xl !text-texto leading-relaxed">
-                            Pode-se concluir que a <strong className="text-primaria font-semibold">Inteligência Artificial é a espinha dorsal</strong> que viabiliza as promessas da Indústria 4.0 na cadeia de suprimentos. Longe de ser apenas um recurso tecnológico auxiliar, ela funciona como o <strong className="text-texto underline decoration-primaria decoration-2 underline-offset-4">cérebro das operações</strong>.
+                {/* Parágrafos da Conclusão com Ritmo Editorial */}
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+                    <div className="conclusion-element lg:col-span-8 flex flex-col gap-8">
+                        <p className="font-corpo text-xl sm:text-3xl text-texto font-light leading-relaxed">
+                            Pode-se concluir que a <strong className="font-semibold text-primaria">Inteligência Artificial é a espinha dorsal</strong> que viabiliza as promessas da Indústria 4.0 na cadeia de suprimentos. Longe de ser apenas um recurso tecnológico auxiliar, ela funciona como o <span className="underline decoration-primaria decoration-2 underline-offset-8">cérebro das operações</span>.
                         </p>
 
-                        <p className="texto !w-full !max-w-none text-base sm:text-xl lg:text-2xl text-texto-suave leading-relaxed">
+                        <p className="font-corpo text-base sm:text-lg text-texto-suave leading-relaxed">
                             Conforme demonstrado pelos casos da <strong className="text-natura font-semibold">Natura</strong> e da <strong className="text-lenovo font-semibold">Lenovo</strong>, a união de robôs físicos autônomos com softwares analíticos e preditivos garante níveis superlativos de eficiência, resiliência climática e agilidade no atendimento ao consumidor. Por fim, o modelo de automação integral chinês evidencia que a implantação de armazéns inteligentes não é apenas uma tendência passageira, mas sim a base estrutural mandatória para a competitividade na economia global contemporânea.
                         </p>
                     </div>
-                </div>
 
-                {/* Resumo dos 3 Fundamentos */}
-                <div className="conclusion-anim grid grid-cols-1 md:grid-cols-3 gap-4 pt-4 text-center">
-                    <div className="p-4 rounded-xl bg-superficie/50 border border-borda">
-                        <span className="text-primaria font-mono text-xs block mb-1">PENSAMENTO</span>
-                        <span className="font-titulo text-texto text-sm sm:text-base font-semibold">Cérebro Analítico</span>
-                    </div>
-                    <div className="p-4 rounded-xl bg-superficie/50 border border-borda">
-                        <span className="text-primaria font-mono text-xs block mb-1">EXECUÇÃO</span>
-                        <span className="font-titulo text-texto text-sm sm:text-base font-semibold">Robótica Autônoma</span>
-                    </div>
-                    <div className="p-4 rounded-xl bg-superficie/50 border border-borda">
-                        <span className="text-primaria font-mono text-xs block mb-1">FUTURO</span>
-                        <span className="font-titulo text-texto text-sm sm:text-base font-semibold">Competitividade Global</span>
+                    {/* Coluna Lateral: Resumo de Pilares Críticos */}
+                    <div className="conclusion-element lg:col-span-4 border-l border-borda/60 pl-6 lg:pl-10 flex flex-col gap-6 font-mono text-xs">
+                        <div className="pb-4 border-b border-borda/40">
+                            <span className="text-primaria block mb-1">01 / CAPACIDADE ANALÍTICA</span>
+                            <span className="text-texto font-semibold text-sm">Decisão Preditiva</span>
+                            <p className="font-corpo text-texto-suave text-xs mt-1">
+                                Análise contínua de Big Data climática e viária sem intervenção manual.
+                            </p>
+                        </div>
+
+                        <div className="pb-4 border-b border-borda/40">
+                            <span className="text-primaria block mb-1">02 / AUTONOMIA FÍSICA</span>
+                            <span className="text-texto font-semibold text-sm">Robótica de Precisão</span>
+                            <p className="font-corpo text-texto-suave text-xs mt-1">
+                                Separação, triagem tridimensional e transporte last-mile por drones.
+                            </p>
+                        </div>
+
+                        <div>
+                            <span className="text-primaria block mb-1">03 / EXIGÊNCIA DE MERCADO</span>
+                            <span className="text-texto font-semibold text-sm">Pilar Estrutural</span>
+                            <p className="font-corpo text-texto-suave text-xs mt-1">
+                                Condição imperativa de competitividade para a economia global contemporânea.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -82,4 +90,3 @@ function Conclusion() {
 }
 
 export default Conclusion;
-

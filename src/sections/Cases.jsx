@@ -7,11 +7,11 @@ function Cases() {
 
     useGSAP(
         () => {
-            gsap.from(".case-card", {
+            gsap.from(".case-panel", {
                 opacity: 0,
                 y: 50,
                 stagger: 0.2,
-                duration: 0.9,
+                duration: 1,
                 ease: "power3.out",
                 scrollTrigger: {
                     trigger: sectionRef.current,
@@ -26,96 +26,101 @@ function Cases() {
         <section
             id="cases"
             ref={sectionRef}
-            className="w-full py-20 md:py-32 px-4 sm:px-6 lg:px-8 border-t border-borda/40 relative"
+            className="w-full py-24 sm:py-32 px-4 sm:px-8 lg:px-12 border-b border-borda/60 relative"
         >
-            <div className="max-w-6xl mx-auto flex flex-col gap-12 sm:gap-16">
-                {/* Header da Seção */}
-                <div className="flex flex-col gap-3">
-                    <div className="flex items-center gap-3">
-                        <span className="text-primaria font-mono text-sm tracking-widest uppercase">03 // ESTUDOS DE CASO</span>
-                        <div className="h-[1px] flex-1 bg-borda" />
+            <div className="max-w-7xl mx-auto flex flex-col gap-16">
+                {/* Cabeçalho da Seção */}
+                <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 border-b border-borda/60 pb-6">
+                    <div>
+                        <span className="font-mono text-xs text-primaria uppercase tracking-widest block mb-2">
+                            [ 03 // DOSSIÊS EMPÍRICOS ]
+                        </span>
+                        <h2 className="font-titulo text-texto text-3xl sm:text-5xl lg:text-6xl font-black uppercase tracking-tight">
+                            Casos de Referência
+                        </h2>
                     </div>
-                    <h2 className="font-titulo text-texto text-3xl sm:text-5xl md:text-6xl font-bold tracking-tight">
-                        Excelência na Prática
-                    </h2>
-                    <p className="text-texto-suave text-base sm:text-lg max-w-2xl mt-2 font-corpo">
-                        Duas empresas de referência global que transformaram sua logística e armazenagem com inteligência artificial e automação avançada.
+                    <p className="max-w-md font-mono text-xs text-texto-suave leading-relaxed">
+                        Implementações que comprovam a viabilidade prática da convergência entre robótica autônoma e algoritmos preditivos.
                     </p>
                 </div>
 
-                {/* Grid dos Cases */}
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-                    {/* Case 1: Natura */}
-                    <div className="case-card group relative bg-superficie/70 border border-borda hover:border-natura/60 rounded-3xl p-6 sm:p-10 flex flex-col justify-between transition-all duration-300 hover:shadow-[0_20px_40px_rgba(16,185,129,0.12)]">
-                        <div>
-                            <div className="flex items-center justify-between gap-4 mb-6">
-                                <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-bold uppercase tracking-wider bg-natura/10 text-natura border border-natura/30">
-                                    <span className="w-2 h-2 rounded-full bg-natura" />
-                                    Case Brasileiro
+                {/* Grid Split Dossier Awwwards */}
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12">
+                    {/* Dossiê 01: Natura */}
+                    <div className="case-panel relative border border-borda bg-superficie/20 p-8 sm:p-12 flex flex-col justify-between gap-8 group hover:border-natura/80 transition-colors duration-500">
+                        {/* Cantoneiras de Precisão */}
+                        <div className="absolute top-0 left-0 w-2 h-2 border-t border-l border-natura" />
+                        <div className="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-natura" />
+
+                        <div className="flex flex-col gap-6">
+                            <div className="flex items-center justify-between font-mono text-xs">
+                                <span className="text-natura tracking-widest">// DOSSIÊ 01</span>
+                                <span className="text-texto-suave">ORIGEM: BRASIL [LATAM]</span>
+                            </div>
+
+                            <div>
+                                <h3 className="font-titulo text-texto text-3xl sm:text-4xl font-extrabold uppercase group-hover:text-natura transition-colors">
+                                    Natura
+                                </h3>
+                                <span className="font-mono text-[11px] text-texto-suave tracking-wider uppercase block mt-1">
+                                    ARMAZENAGEM VERTICAL & PREVISÃO DE DEMANDA
                                 </span>
-                                <span className="text-texto-suave/60 font-mono text-xs">LOGÍSTICA PREVENTIVA</span>
                             </div>
 
-                            <h3 className="font-titulo text-texto text-2xl sm:text-3xl font-bold mb-4 group-hover:text-natura transition-colors">
-                                Natura
-                            </h3>
-
-                            <p className="text-texto-suave text-sm sm:text-base leading-relaxed font-corpo mb-6">
-                                Pioneira no Brasil no uso de armazéns verticais autônomos e algoritmos de previsão de demanda. A Natura combina robôs de separação com sistemas preditivos que cruzam clima, sazonalidade e rotas rodoviárias para assegurar entregas no prazo em escala continental.
+                            <p className="font-corpo text-sm sm:text-base text-texto-suave leading-relaxed">
+                                Referência brasileira na aplicação de armazéns verticais autônomos. A empresa alia robôs de separação inteligente a algoritmos preditivos que cruzam variáveis de clima, rotas de tráfego e sazonalidade para garantir a precisão nas entregas em escala continental.
                             </p>
-
-                            <div className="grid grid-cols-2 gap-3 my-6 pt-4 border-t border-borda">
-                                <div className="p-3 rounded-xl bg-borda/20">
-                                    <div className="font-titulo text-natura text-xl sm:text-2xl font-bold">100%</div>
-                                    <div className="text-texto-suave text-xs mt-0.5">Rastreamento Inteligente</div>
-                                </div>
-                                <div className="p-3 rounded-xl bg-borda/20">
-                                    <div className="font-titulo text-natura text-xl sm:text-2xl font-bold">Autônomo</div>
-                                    <div className="text-texto-suave text-xs mt-0.5">Picking & Armazenagem</div>
-                                </div>
-                            </div>
                         </div>
 
-                        <div className="pt-4 flex items-center justify-between text-xs font-mono text-natura">
-                            <span>AUTOMAÇÃO VERTICAL</span>
-                            <span>→</span>
+                        {/* Metadados Técnicos do Caso */}
+                        <div className="pt-6 border-t border-borda/60 grid grid-cols-2 gap-4 font-mono text-xs">
+                            <div>
+                                <span className="text-[10px] text-texto-suave block">FOCO PRIMÁRIO</span>
+                                <span className="text-texto font-semibold">Picking Autônomo</span>
+                            </div>
+                            <div>
+                                <span className="text-[10px] text-texto-suave block">IMPACTO</span>
+                                <span className="text-natura font-semibold">Pontualidade Contínua</span>
+                            </div>
                         </div>
                     </div>
 
-                    {/* Case 2: Lenovo */}
-                    <div className="case-card group relative bg-superficie/70 border border-borda hover:border-lenovo/60 rounded-3xl p-6 sm:p-10 flex flex-col justify-between transition-all duration-300 hover:shadow-[0_20px_40px_rgba(239,68,68,0.12)]">
-                        <div>
-                            <div className="flex items-center justify-between gap-4 mb-6">
-                                <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full text-xs font-mono font-bold uppercase tracking-wider bg-lenovo/10 text-lenovo border border-lenovo/30">
-                                    <span className="w-2 h-2 rounded-full bg-lenovo" />
-                                    Multinacional
+                    {/* Dossiê 02: Lenovo */}
+                    <div className="case-panel relative border border-borda bg-superficie/20 p-8 sm:p-12 flex flex-col justify-between gap-8 group hover:border-lenovo/80 transition-colors duration-500">
+                        {/* Cantoneiras de Precisão */}
+                        <div className="absolute top-0 left-0 w-2 h-2 border-t border-l border-lenovo" />
+                        <div className="absolute bottom-0 right-0 w-2 h-2 border-b border-r border-lenovo" />
+
+                        <div className="flex flex-col gap-6">
+                            <div className="flex items-center justify-between font-mono text-xs">
+                                <span className="text-lenovo tracking-widest">// DOSSIÊ 02</span>
+                                <span className="text-texto-suave">ALCANCE: GLOBAL [MULTINATIONAL]</span>
+                            </div>
+
+                            <div>
+                                <h3 className="font-titulo text-texto text-3xl sm:text-4xl font-extrabold uppercase group-hover:text-lenovo transition-colors">
+                                    Lenovo
+                                </h3>
+                                <span className="font-mono text-[11px] text-texto-suave tracking-wider uppercase block mt-1">
+                                    GÊMEOS DIGITAIS & SUPPLY CHAIN RESILIENTE
                                 </span>
-                                <span className="text-texto-suave/60 font-mono text-xs">SUPPLY CHAIN GLOBAL</span>
                             </div>
 
-                            <h3 className="font-titulo text-texto text-2xl sm:text-3xl font-bold mb-4 group-hover:text-lenovo transition-colors">
-                                Lenovo
-                            </h3>
-
-                            <p className="text-texto-suave text-sm sm:text-base leading-relaxed font-corpo mb-6">
-                                Com fábricas inteligentes globais, a Lenovo utiliza gêmeos digitais (Digital Twins) e IA para orquestrar sua cadeia de suprimentos de ponta a ponta. A tecnologia mitiga riscos de escassez de componentes e otimiza rotas de transporte aéreo e marítimo em tempo real.
+                            <p className="font-corpo text-sm sm:text-base text-texto-suave leading-relaxed">
+                                Com fábricas inteligentes distribuídas globalmente, a multinacional orquestra sua cadeia de suprimentos integrando réplicas digitais (Digital Twins) e inteligência artificial para antecipar desabastecimentos e reprogramar fluxos logísticos marítimos e aéreos instantaneamente.
                             </p>
-
-                            <div className="grid grid-cols-2 gap-3 my-6 pt-4 border-t border-borda">
-                                <div className="p-3 rounded-xl bg-borda/20">
-                                    <div className="font-titulo text-lenovo text-xl sm:text-2xl font-bold">IA & Twins</div>
-                                    <div className="text-texto-suave text-xs mt-0.5">Simulação de Fábrica</div>
-                                </div>
-                                <div className="p-3 rounded-xl bg-borda/20">
-                                    <div className="font-titulo text-lenovo text-xl sm:text-2xl font-bold">Global</div>
-                                    <div className="text-texto-suave text-xs mt-0.5">Otimização de Rotas</div>
-                                </div>
-                            </div>
                         </div>
 
-                        <div className="pt-4 flex items-center justify-between text-xs font-mono text-lenovo">
-                            <span>DECISÃO PREDITIVA</span>
-                            <span>→</span>
+                        {/* Metadados Técnicos do Caso */}
+                        <div className="pt-6 border-t border-borda/60 grid grid-cols-2 gap-4 font-mono text-xs">
+                            <div>
+                                <span className="text-[10px] text-texto-suave block">FOCO PRIMÁRIO</span>
+                                <span className="text-texto font-semibold">Digital Twins</span>
+                            </div>
+                            <div>
+                                <span className="text-[10px] text-texto-suave block">IMPACTO</span>
+                                <span className="text-lenovo font-semibold">Resiliência Operacional</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -125,4 +130,3 @@ function Cases() {
 }
 
 export default Cases;
-

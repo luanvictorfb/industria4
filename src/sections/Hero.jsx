@@ -16,9 +16,9 @@ function Hero() {
 
             const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
 
-            tl.from("#hero-badge", {
+            tl.from("#hero-meta-top", {
                 opacity: 0,
-                y: -20,
+                y: -15,
                 duration: 0.8,
                 delay: 0.2,
             })
@@ -26,31 +26,30 @@ function Hero() {
                 titleSplit.chars,
                 {
                     opacity: 0,
-                    y: 60,
-                    rotateX: -40,
-                    stagger: 0.02,
-                    duration: 0.8,
+                    y: 70,
+                    stagger: 0.015,
+                    duration: 0.9,
                 },
                 "-=0.4"
             )
             .from(
-                "#hero-banner",
+                "#hero-media-wrapper",
                 {
                     opacity: 0,
-                    scale: 0.96,
-                    y: 30,
-                    duration: 1,
+                    scale: 0.97,
+                    y: 40,
+                    duration: 1.1,
                 },
                 "-=0.5"
             )
             .from(
-                "#hero-scroll-indicator",
+                "#hero-meta-bottom",
                 {
                     opacity: 0,
-                    y: -10,
+                    y: 15,
                     duration: 0.6,
                 },
-                "-=0.3"
+                "-=0.4"
             );
 
             return () => titleSplit.revert();
@@ -62,54 +61,86 @@ function Hero() {
         <section
             id="inicio"
             ref={containerRef}
-            className="relative min-h-screen w-full flex flex-col items-center justify-center pt-24 sm:pt-32 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden"
+            className="relative min-h-screen w-full flex flex-col justify-between pt-28 sm:pt-36 pb-12 px-4 sm:px-8 lg:px-12 border-b border-borda/60"
         >
-            {/* Glow de fundo */}
-            <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] sm:w-[600px] h-[300px] sm:h-[600px] bg-primaria/10 rounded-full blur-[140px] pointer-events-none -z-10" />
+            {/* Linhas Técnicas de Mira (Corners Awwwards) */}
+            <div className="absolute top-24 left-6 text-white/20 font-mono text-xs select-none">+</div>
+            <div className="absolute top-24 right-6 text-white/20 font-mono text-xs select-none">+</div>
 
-            <div className="w-full max-w-6xl mx-auto flex flex-col items-center text-center">
-                {/* Badge Tecnológico */}
+            <div className="w-full max-w-7xl mx-auto flex flex-col">
+                {/* Metadados Técnicos no Topo */}
                 <div
-                    id="hero-badge"
-                    className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-superficie border border-borda text-xs sm:text-sm text-texto-suave mb-6 sm:mb-8 shadow-inner"
+                    id="hero-meta-top"
+                    className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-6 border-b border-borda/60 font-mono text-[11px] uppercase tracking-[0.22em] text-texto-suave"
                 >
-                    <span className="w-2 h-2 rounded-full bg-primaria animate-ping" />
-                    <span>Inovação, Automação & Decisão em Tempo Real</span>
-                </div>
-
-                {/* Título Principal com Gradiente */}
-                <h1
-                    id="hero-title"
-                    className="font-titulo text-texto font-extrabold text-3xl sm:text-5xl md:text-7xl lg:text-8xl tracking-tight leading-[1.15] max-w-5xl mb-8"
-                >
-                    Inteligência Artificial na{" "}
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-primaria via-cyan-300 to-primaria-escura">
-                        Indústria 4.0
-                    </span>
-                </h1>
-
-                {/* Banner de Abertura */}
-                <div
-                    id="hero-banner"
-                    className="w-full max-w-5xl my-4 sm:my-8 rounded-2xl sm:rounded-3xl overflow-hidden border border-borda/80 shadow-[0_20px_50px_rgba(8,14,26,0.8)] relative group"
-                >
-                    <img
-                        src="/images/banner_abertura_saida_jpg.jpg"
-                        alt="Banner de Abertura Indústria 4.0"
-                        className="w-full h-auto object-cover transform group-hover:scale-[1.02] transition-transform duration-700 ease-out"
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-t from-fundo/70 via-transparent to-transparent pointer-events-none" />
-                </div>
-
-                {/* Indicador de Scroll */}
-                <div
-                    id="hero-scroll-indicator"
-                    className="flex flex-col items-center gap-2 mt-4 text-texto-suave text-xs font-mono uppercase tracking-widest"
-                >
-                    <span>Role para explorar</span>
-                    <div className="w-5 h-9 rounded-full border-2 border-borda flex items-start justify-center p-1">
-                        <div className="w-1.5 h-2 bg-primaria rounded-full animate-bounce" />
+                    <div className="flex items-center gap-2">
+                        <span className="w-1.5 h-1.5 bg-primaria" />
+                        <span>[ TESE 01 — AUTOMAÇÃO INDUSTRIAL ]</span>
                     </div>
+                    <div className="flex items-center gap-6">
+                        <span>SUPPLY CHAIN 4.0</span>
+                        <span className="text-primaria">REV. 2026 // BR</span>
+                    </div>
+                </div>
+
+                {/* Título Monumental Brutalista */}
+                <div className="py-10 sm:py-16">
+                    <h1
+                        id="hero-title"
+                        className="font-titulo text-texto font-black text-3xl sm:text-6xl md:text-7xl lg:text-[5.8rem] leading-[1.08] tracking-tight uppercase"
+                    >
+                        Inteligência Artificial na{" "}
+                        <span className="text-primaria">
+                            Indústria 4.0
+                        </span>
+                    </h1>
+                </div>
+
+                {/* Banner de Abertura com Frame Técnico de Engenharia */}
+                <div
+                    id="hero-media-wrapper"
+                    className="relative w-full border border-borda bg-superficie/30 p-2 sm:p-3 my-4 group"
+                >
+                    {/* Cantoneiras de precisão técnica */}
+                    <div className="absolute -top-[5px] -left-[5px] w-2.5 h-2.5 border-t-2 border-l-2 border-primaria pointer-events-none" />
+                    <div className="absolute -top-[5px] -right-[5px] w-2.5 h-2.5 border-t-2 border-r-2 border-primaria pointer-events-none" />
+                    <div className="absolute -bottom-[5px] -left-[5px] w-2.5 h-2.5 border-b-2 border-l-2 border-primaria pointer-events-none" />
+                    <div className="absolute -bottom-[5px] -right-[5px] w-2.5 h-2.5 border-b-2 border-r-2 border-primaria pointer-events-none" />
+
+                    <div className="relative overflow-hidden aspect-[16/8] sm:aspect-[21/9]">
+                        <img
+                            src="/images/banner_abertura_saida_jpg.jpg"
+                            alt="Planta e Logística Inteligente na Indústria 4.0"
+                            className="w-full h-full object-cover grayscale-[30%] contrast-[110%] group-hover:scale-[1.015] group-hover:grayscale-0 transition-all duration-700 ease-out"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-fundo via-transparent to-transparent opacity-60 pointer-events-none" />
+                    </div>
+
+                    {/* Rodapé técnico da figura */}
+                    <div className="flex items-center justify-between pt-2 px-1 font-mono text-[10px] uppercase tracking-widest text-texto-suave/80">
+                        <span>[ FIGURA 01.0 // SISTEMA DE PRODUÇÃO INTEGRADA ]</span>
+                        <span className="hidden sm:inline">HIGH-SPEED LOGISTICS AUTOMATION</span>
+                    </div>
+                </div>
+
+                {/* Metadados Inferiores com Chamada de Ação */}
+                <div
+                    id="hero-meta-bottom"
+                    className="pt-8 flex flex-col sm:flex-row sm:items-end justify-between gap-6 font-mono"
+                >
+                    <div className="max-w-md text-xs text-texto-suave leading-relaxed">
+                        Estudo analítico sobre a convergência entre sensores IoT, redes neurais e automação robótica na transformação da cadeia produtiva contemporânea.
+                    </div>
+
+                    <a
+                        href="#introducao"
+                        className="group flex items-center gap-3 text-xs uppercase tracking-[0.2em] text-texto hover:text-primaria transition-colors"
+                    >
+                        <span>DESLOCAR PARA O DOSSIÊ</span>
+                        <span className="w-8 h-8 border border-borda group-hover:border-primaria flex items-center justify-center transition-colors">
+                            ↓
+                        </span>
+                    </a>
                 </div>
             </div>
         </section>

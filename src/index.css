@@ -23,22 +23,27 @@ body::-webkit-scrollbar {
   display: none;
 }
 
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-33.333%, 0, 0);
+  }
+}
+
 
 @theme {
-
-    --color-fundo: #0b1220;
-    --color-superficie: #141e33;
-    --color-borda: #24324f;
-
+    --color-fundo: #080d19;
+    --color-superficie: #0e1626;
+    --color-borda: #1e2c45;
 
     --color-primaria: #F05A22;
-    --color-primaria-escura: #0ea5c4;
+    --color-primaria-escura: #c84413;
     --color-alerta: #ff8a1f;
 
-
-    --color-texto: #e6edf7;
+    --color-texto: #f1f5f9;
     --color-texto-suave: #94a3b8;
-
 
     --color-natura: #10b981;
     --color-lenovo: #ef4444;
@@ -58,10 +63,10 @@ body::-webkit-scrollbar {
     .abs-center {
         @apply absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2;
     }
-    .general-title {
-        @apply 2xl:text-[7rem] lg:text-7xl md:text-5xl text-3xl font-bold uppercase tracking-tight font-titulo;
+    .editorial-label {
+        @apply font-mono text-[11px] sm:text-xs uppercase tracking-[0.22em] text-texto-suave/80;
     }
-    .texto {
-        @apply text-texto-suave text-base sm:text-lg md:text-xl lg:text-2xl leading-relaxed md:leading-loose font-corpo text-left md:text-justify max-w-4xl mx-auto;
+    .tech-corner {
+        @apply absolute text-white/20 font-mono text-xs select-none pointer-events-none;
     }
 }
