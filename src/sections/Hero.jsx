@@ -109,7 +109,7 @@ function Hero() {
 
                     <div className="relative overflow-hidden aspect-[16/8] sm:aspect-[21/9]">
                         <img
-                            src="/images/banner_abertura_saida_jpg.jpg"
+                            src={`${import.meta.env.BASE_URL}images/banner_abertura_saida_jpg.jpg`}
                             alt="Planta e Logística Inteligente na Indústria 4.0"
                             className="w-full h-full object-cover grayscale-[30%] contrast-[110%] group-hover:scale-[1.015] group-hover:grayscale-0 transition-all duration-700 ease-out"
                         />
