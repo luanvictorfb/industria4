@@ -79,13 +79,13 @@ function Hero() {
                     <div className="absolute -bottom-[5px] -left-[5px] w-2.5 h-2.5 border-b-2 border-l-2 border-primaria pointer-events-none" />
                     <div className="absolute -bottom-[5px] -right-[5px] w-2.5 h-2.5 border-b-2 border-r-2 border-primaria pointer-events-none" />
 
-                    <div className="relative overflow-hidden aspect-[16/8] sm:aspect-[21/9]">
+                    <div className="relative overflow-hidden">
                         <img
                             src={`${import.meta.env.BASE_URL}images/banner_abertura_saida_jpg.jpg`}
                             alt="Planta e Logística Inteligente na Indústria 4.0"
-                            className="w-full h-full object-cover grayscale-[30%] contrast-[110%] group-hover:scale-[1.015] group-hover:grayscale-0 transition-all duration-700 ease-out"
+                            className="w-full h-auto object-contain grayscale-[30%] contrast-[110%] group-hover:scale-[1.015] group-hover:grayscale-0 transition-all duration-700 ease-out"
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-fundo via-transparent to-transparent opacity-60 pointer-events-none" />
+                        <div className="absolute inset-0 bg-gradient-to-t from-fundo via-transparent to-transparent opacity-40 pointer-events-none" />
                     </div>
 
                     {/* Rodapé técnico da figura */}
