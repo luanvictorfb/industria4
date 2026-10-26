@@ -45,7 +45,7 @@ function App() {
   });
 
   return (
-    <div className="min-h-screen bg-fundo text-texto selection:bg-primaria selection:text-fundo">
+    <div className="min-h-screen bg-fundo text-texto">
       {/* Barra de Navegação Fixa */}
       <NavBar />
 

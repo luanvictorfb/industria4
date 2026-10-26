@@ -32,9 +32,7 @@ function Cases() {
                 {/* Cabeçalho da Seção */}
                 <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-6 border-b border-borda/60 pb-6">
                     <div>
-                        <span className="font-mono text-xs text-primaria uppercase tracking-widest block mb-2">
-                            03 - DOSSIÊS EMPÍRICOS 
-                        </span>
+                        
                         <h2 className="font-titulo text-texto text-3xl sm:text-5xl lg:text-6xl font-black uppercase tracking-tight">
                             Casos de Referência
                         </h2>

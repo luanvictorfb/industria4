@@ -30,9 +30,7 @@ function China() {
         >
             <div className="max-w-7xl mx-auto flex flex-col gap-16">
                 {/* Linha de Identificação */}
-                <div className="china-element flex items-center justify-between border-b border-borda/60 pb-4 font-mono text-[11px] uppercase tracking-[0.25em] text-texto-suave">
-                    <span className="text-primaria">04 - ESCALABILIDADE GLOBAL</span>
-                </div>
+                
 
                 {/* Grid Editorial com Métrica Brutalista Monumental */}
                 <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">

@@ -30,9 +30,7 @@ function Conclusion() {
         >
             <div className="max-w-7xl mx-auto flex flex-col gap-16">
                 {/* Linha de Identificação */}
-                <div className="conclusion-element flex items-center justify-between border-b border-borda/60 pb-4 font-mono text-[11px] uppercase tracking-[0.25em] text-texto-suave">
-                    <span className="text-primaria">05 - CONSIDERAÇÕES FINAIS</span>
-                </div>
+                
 
                 {/* Bloco de Conclusão / Manifesto Tipográfico */}
                 <div className="conclusion-element flex flex-col gap-6 max-w-5xl">

@@ -88,11 +88,6 @@ function Hero() {
                         <div className="absolute inset-0 bg-gradient-to-t from-fundo via-transparent to-transparent opacity-40 pointer-events-none" />
                     </div>
 
-                    {/* Rodapé técnico da figura */}
-                    <div className="flex items-center justify-between pt-2 px-1 font-mono text-[10px] uppercase tracking-widest text-texto-suave/80">
-                        <span>[ FIGURA 01.0 // SISTEMA DE PRODUÇÃO INTEGRADA ]</span>
-                        <span className="hidden sm:inline">HIGH-SPEED LOGISTICS AUTOMATION</span>
-                    </div>
                 </div>
 
                 {/* Metadados Inferiores com Chamada de Ação */}

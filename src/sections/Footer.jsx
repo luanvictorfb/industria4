@@ -11,22 +11,13 @@ function Footer() {
                             INDÚSTRIA <span className="text-primaria">4.0</span>
                         </span>
                     </div>
-
-                    <div className="flex flex-wrap items-center gap-6 text-texto-suave">
-                        <a href="#inicio" className="hover:text-primaria transition-colors"> 00 - INÍCIO </a>
-                        <a href="#introducao" className="hover:text-primaria transition-colors"> 01 - GERAL </a>
-                        <a href="#logistica" className="hover:text-primaria transition-colors"> 02 - LOGÍSTICA </a>
-                        <a href="#cases" className="hover:text-primaria transition-colors"> 03 - DOSSIÊS </a>
-                        <a href="#china" className="hover:text-primaria transition-colors"> 04 - CHINA </a>
-                        <a href="#conclusao" className="hover:text-primaria transition-colors">05 - SÍNTESE</a>
-                    </div>
                 </div>
 
                 <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 text-texto-suave/70 text-[11px]">
                     <div>
-                        PESQUISA ACADÊMICA FEITA PELA TURMA DE SISTEMAS DE COMPUTAÇÃO E DE INFORMAÇÃO 2026/2 ANHANGUERA -INTELIGÊNCIA ARTIFICIAL & SUPPLY CHAIN 4.0
+                        PESQUISA ACADÊMICA FEITA PELA TURMA DE SISTEMAS DE COMPUTAÇÃO E DE INFORMAÇÃO 2026/2 ANHANGUERA
+                        -INTELIGÊNCIA ARTIFICIAL & SUPPLY CHAIN 4.0
                     </div>
-                    
                 </div>
             </div>
         </footer>
