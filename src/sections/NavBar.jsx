@@ -57,7 +57,7 @@ const NavBar = () => {
                     aria-label="Abrir menu"
                 >
                     <span className="font-mono text-xs uppercase tracking-wider">
-                        {isMenuOpen ? "[ FECHAR ]" : "[ MENU ]"}
+                        {isMenuOpen ? " FECHAR " : " MENU "}
                     </span>
                 </button>
             </nav>
