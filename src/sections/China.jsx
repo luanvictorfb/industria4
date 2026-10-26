@@ -92,11 +92,7 @@ function China() {
                             </div>
                         </div>
 
-                        {/* Indicador de Blueprint */}
-                        <div className="border border-borda/60 p-4 font-mono text-[11px] text-texto-suave flex items-center justify-between">
-                            <span>SISTEMA DE ARMAZENAGEM 3D:</span>
-                            <span className="text-texto">VERTICAL INTEGRADO</span>
-                        </div>
+                        
                     </div>
                 </div>
             </div>
