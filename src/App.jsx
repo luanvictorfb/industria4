@@ -35,7 +35,6 @@ function App() {
       <div id="smooth-wrapper" className="w-full overflow-hidden">
         <div id="smooth-content" className="w-full">
           <Hero />
-          <TechTicker />
           <Introduction />
           <Logistics />
           <Cases />

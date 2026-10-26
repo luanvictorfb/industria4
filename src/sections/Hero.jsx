@@ -68,20 +68,7 @@ function Hero() {
             <div className="absolute top-24 right-6 text-white/20 font-mono text-xs select-none">+</div>
 
             <div className="w-full max-w-7xl mx-auto flex flex-col">
-                {/* Metadados Técnicos no Topo */}
-                <div
-                    id="hero-meta-top"
-                    className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 pb-6 border-b border-borda/60 font-mono text-[11px] uppercase tracking-[0.22em] text-texto-suave"
-                >
-                    <div className="flex items-center gap-2">
-                        <span className="w-1.5 h-1.5 bg-primaria" />
-                        <span>[ TESE 01 — AUTOMAÇÃO INDUSTRIAL ]</span>
-                    </div>
-                    <div className="flex items-center gap-6">
-                        <span>SUPPLY CHAIN 4.0</span>
-                        <span className="text-primaria">REV. 2026 // BR</span>
-                    </div>
-                </div>
+                
 
                 {/* Título Monumental Brutalista */}
                 <div className="py-10 sm:py-16">
@@ -124,24 +111,7 @@ function Hero() {
                 </div>
 
                 {/* Metadados Inferiores com Chamada de Ação */}
-                <div
-                    id="hero-meta-bottom"
-                    className="pt-8 flex flex-col sm:flex-row sm:items-end justify-between gap-6 font-mono"
-                >
-                    <div className="max-w-md text-xs text-texto-suave leading-relaxed">
-                        Estudo analítico sobre a convergência entre sensores IoT, redes neurais e automação robótica na transformação da cadeia produtiva contemporânea.
-                    </div>
-
-                    <a
-                        href="#introducao"
-                        className="group flex items-center gap-3 text-xs uppercase tracking-[0.2em] text-texto hover:text-primaria transition-colors"
-                    >
-                        <span>DESLOCAR PARA O DOSSIÊ</span>
-                        <span className="w-8 h-8 border border-borda group-hover:border-primaria flex items-center justify-center transition-colors">
-                            ↓
-                        </span>
-                    </a>
-                </div>
+                
             </div>
         </section>
     );

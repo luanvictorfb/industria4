@@ -31,13 +31,11 @@ function Logistics() {
             <div className="max-w-7xl mx-auto flex flex-col gap-16">
                 {/* Linha de Identificação */}
                 <div className="logistics-block flex items-center justify-between border-b border-borda/60 pb-4 font-mono text-[11px] uppercase tracking-[0.25em] text-texto-suave">
-                    <span className="text-primaria">[ 02 // LOGÍSTICA INTELIGENTE ]</span>
-                    <span>SUPPLY CHAIN 4.0 & INFRAESTRUTURA</span>
+                    <span className="text-primaria"> 02 - LOGÍSTICA INTELIGENTE </span>
                 </div>
 
                 {/* Banner Tipográfico / Arquitetura do Conceito */}
                 <div className="logistics-block flex flex-col gap-4">
-                    <span className="font-mono text-xs text-primaria uppercase tracking-widest">// CONCEITO CHAVE</span>
                     <h2 className="font-titulo text-texto text-3xl sm:text-6xl lg:text-7xl font-black uppercase tracking-tight leading-[1.05]">
                         A IA na Logística da{" "}
                         <span className="text-transparent bg-clip-text bg-gradient-to-r from-texto via-texto-suave to-borda">
@@ -89,7 +87,7 @@ function Logistics() {
 
                         <div className="pt-4 border-t border-borda/60 flex items-center justify-between font-mono text-xs text-texto-suave">
                             <span>CASES EM DESTAQUE NO SETOR:</span>
-                            <span className="text-texto font-bold">NATURA (BR) // LENOVO (GL)</span>
+                            <span className="text-texto font-bold">NATURA (BR) - LENOVO (GL)</span>
                         </div>
                     </div>
                 </div>

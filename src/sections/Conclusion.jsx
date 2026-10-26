@@ -31,15 +31,12 @@ function Conclusion() {
             <div className="max-w-7xl mx-auto flex flex-col gap-16">
                 {/* Linha de Identificação */}
                 <div className="conclusion-element flex items-center justify-between border-b border-borda/60 pb-4 font-mono text-[11px] uppercase tracking-[0.25em] text-texto-suave">
-                    <span className="text-primaria">[ 05 // CONSIDERAÇÕES FINAIS ]</span>
-                    <span>SÍNTESE DA TESE & PERSPECTIVAS</span>
+                    <span className="text-primaria">05 - CONSIDERAÇÕES FINAIS</span>
                 </div>
 
                 {/* Bloco de Conclusão / Manifesto Tipográfico */}
                 <div className="conclusion-element flex flex-col gap-6 max-w-5xl">
-                    <span className="font-mono text-xs text-primaria uppercase tracking-widest block">
-                        // SÍNTESE ESTRUTURAL
-                    </span>
+                    
                     <h2 className="font-titulo text-texto text-3xl sm:text-6xl lg:text-7xl font-black uppercase tracking-tight leading-[1.05]">
                         A IA como o Cérebro das Operações
                     </h2>
@@ -60,7 +57,7 @@ function Conclusion() {
                     {/* Coluna Lateral: Resumo de Pilares Críticos */}
                     <div className="conclusion-element lg:col-span-4 border-l border-borda/60 pl-6 lg:pl-10 flex flex-col gap-6 font-mono text-xs">
                         <div className="pb-4 border-b border-borda/40">
-                            <span className="text-primaria block mb-1">01 / CAPACIDADE ANALÍTICA</span>
+                            <span className="text-primaria block mb-1">01 - CAPACIDADE ANALÍTICA</span>
                             <span className="text-texto font-semibold text-sm">Decisão Preditiva</span>
                             <p className="font-corpo text-texto-suave text-xs mt-1">
                                 Análise contínua de Big Data climática e viária sem intervenção manual.
@@ -68,7 +65,7 @@ function Conclusion() {
                         </div>
 
                         <div className="pb-4 border-b border-borda/40">
-                            <span className="text-primaria block mb-1">02 / AUTONOMIA FÍSICA</span>
+                            <span className="text-primaria block mb-1">02 - AUTONOMIA FÍSICA</span>
                             <span className="text-texto font-semibold text-sm">Robótica de Precisão</span>
                             <p className="font-corpo text-texto-suave text-xs mt-1">
                                 Separação, triagem tridimensional e transporte last-mile por drones.
@@ -76,7 +73,7 @@ function Conclusion() {
                         </div>
 
                         <div>
-                            <span className="text-primaria block mb-1">03 / EXIGÊNCIA DE MERCADO</span>
+                            <span className="text-primaria block mb-1">03 - EXIGÊNCIA DE MERCADO</span>
                             <span className="text-texto font-semibold text-sm">Pilar Estrutural</span>
                             <p className="font-corpo text-texto-suave text-xs mt-1">
                                 Condição imperativa de competitividade para a economia global contemporânea.

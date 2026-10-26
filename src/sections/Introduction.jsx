@@ -31,8 +31,7 @@ function Introduction() {
             <div className="max-w-7xl mx-auto flex flex-col gap-16">
                 {/* Linha de Identificação de Seção */}
                 <div className="intro-block flex items-center justify-between border-b border-borda/60 pb-4 font-mono text-[11px] uppercase tracking-[0.25em] text-texto-suave">
-                    <span className="text-primaria">[ 01 // VISÃO GERAL ]</span>
-                    <span>ORIGEM & TRANSFORMAÇÃO OPERACIONAL</span>
+                    <span className="text-primaria"> 01 - VISÃO GERAL </span>
                 </div>
 
                 {/* Grid Editorial Assimétrico */}
@@ -40,7 +39,6 @@ function Introduction() {
                     {/* Coluna Esquerda: Título e Índice de Parâmetros */}
                     <div className="intro-block lg:col-span-5 flex flex-col gap-8">
                         <div>
-                            <span className="font-mono text-xs text-primaria tracking-widest block mb-2">// CAPÍTULO I</span>
                             <h2 className="font-titulo text-texto text-3xl sm:text-5xl font-black uppercase tracking-tight leading-[1.1]">
                                 A Quarta Revolução Industrial
                             </h2>

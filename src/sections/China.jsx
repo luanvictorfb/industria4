@@ -31,8 +31,7 @@ function China() {
             <div className="max-w-7xl mx-auto flex flex-col gap-16">
                 {/* Linha de Identificação */}
                 <div className="china-element flex items-center justify-between border-b border-borda/60 pb-4 font-mono text-[11px] uppercase tracking-[0.25em] text-texto-suave">
-                    <span className="text-primaria">[ 04 // ESCALABILIDADE GLOBAL ]</span>
-                    <span>HUB LOGÍSTICO & LABORATÓRIO DO FUTURO</span>
+                    <span className="text-primaria">04 - ESCALABILIDADE GLOBAL</span>
                 </div>
 
                 {/* Grid Editorial com Métrica Brutalista Monumental */}
@@ -40,9 +39,7 @@ function China() {
                     {/* Coluna Esquerda: Texto e Título */}
                     <div className="china-element lg:col-span-7 flex flex-col gap-8">
                         <div>
-                            <span className="font-mono text-xs text-primaria uppercase tracking-widest block mb-2">
-                                // FRONTEIRA OPERACIONAL
-                            </span>
+                            
                             <h2 className="font-titulo text-texto text-3xl sm:text-5xl lg:text-6xl font-black uppercase tracking-tight leading-[1.05]">
                                 A China como Referência em Logística 4.0
                             </h2>
@@ -70,7 +67,7 @@ function China() {
                             <div className="absolute bottom-0 left-0 w-3 h-3 border-b border-l border-primaria" />
 
                             <div className="font-mono text-xs text-texto-suave uppercase tracking-widest">
-                                [ IMPACTO COMPROVADO // LAST MILE ]
+                                IMPACTO COMPROVADO - LAST MILE 
                             </div>
 
                             <div>

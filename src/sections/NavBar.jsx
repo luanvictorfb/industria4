@@ -27,15 +27,12 @@ const NavBar = () => {
                         <span className="font-titulo text-texto font-bold text-xs sm:text-sm tracking-wider uppercase">
                             INDÚSTRIA <span className="text-primaria">4.0</span>
                         </span>
-                        <span className="font-mono text-[9px] text-texto-suave tracking-[0.2em] uppercase hidden sm:block">
-                            RESEARCH DOSSIER
-                        </span>
                     </div>
                 </a>
 
                 {/* Links Desktop - Estilo Editorial Awwwards com número de índice */}
                 <div className="hidden lg:flex items-center gap-8">
-                    {navLinks.map((link) => (
+                    {navLinks.map(link => (
                         <a
                             key={link.href}
                             href={link.href}
@@ -51,11 +48,7 @@ const NavBar = () => {
                     ))}
                 </div>
 
-                {/* Marcador Técnico Lateral */}
-                <div className="hidden sm:flex items-center gap-3 font-mono text-[11px] text-texto-suave/80">
-                    <span className="w-1.5 h-1.5 bg-primaria" />
-                    <span className="tracking-widest">LOG // AUTONOMOUS</span>
-                </div>
+               
 
                 {/* Botão Mobile Técnico */}
                 <button
@@ -76,7 +69,7 @@ const NavBar = () => {
                         <span>ÍNDICE DE CONTEÚDO</span>
                         <span>REV. 2026</span>
                     </div>
-                    {navLinks.map((link) => (
+                    {navLinks.map(link => (
                         <a
                             key={link.href}
                             href={link.href}
@@ -87,10 +80,6 @@ const NavBar = () => {
                             <span className="font-mono text-xs text-primaria">{link.num} →</span>
                         </a>
                     ))}
-                    <div className="pt-2 flex justify-between font-mono text-[10px] text-texto-suave">
-                        <span>LAT: 31.23°N // LON: 121.47°E</span>
-                        <span className="text-primaria">STATUS: OPERATIONAL</span>
-                    </div>
                 </div>
             )}
         </header>
