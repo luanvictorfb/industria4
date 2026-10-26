@@ -18,6 +18,13 @@ function Footer() {
                         PESQUISA ACADÊMICA FEITA PELA TURMA DE SISTEMAS DE COMPUTAÇÃO E DE INFORMAÇÃO 2026/2 ANHANGUERA
                         -INTELIGÊNCIA ARTIFICIAL & SUPPLY CHAIN 4.0
                     </div>
+                    <div>
+                        Agnaldo Gabriel Drumond Vilela - Alexandre Henrique Diniz Pereira
+                        <br />Breno Ribeiro Alves - Isaias Felipe Moreira Da Silva
+                        <br />Jhonatan Jeferson Fernandes de Oliveira - João Victor Matos De Oliveira
+                        <br />Luan Victor de Faria Brito - Michael Nicholas Do Nascimento
+                        <br />Nathan Augusto Santos Oliveira
+                    </div>
                 </div>
             </div>
         </footer>
