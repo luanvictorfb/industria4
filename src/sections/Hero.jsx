@@ -16,21 +16,15 @@ function Hero() {
 
             const tl = gsap.timeline({ defaults: { ease: "power3.out" } });
 
-            tl.from("#hero-meta-top", {
-                opacity: 0,
-                y: -15,
-                duration: 0.8,
-                delay: 0.2,
-            })
-            .from(
+            tl.from(
                 titleSplit.chars,
                 {
                     opacity: 0,
                     y: 70,
                     stagger: 0.015,
                     duration: 0.9,
-                },
-                "-=0.4"
+                    delay: 0.1,
+                }
             )
             .from(
                 "#hero-media-wrapper",
@@ -41,15 +35,6 @@ function Hero() {
                     duration: 1.1,
                 },
                 "-=0.5"
-            )
-            .from(
-                "#hero-meta-bottom",
-                {
-                    opacity: 0,
-                    y: 15,
-                    duration: 0.6,
-                },
-                "-=0.4"
             );
 
             return () => titleSplit.revert();

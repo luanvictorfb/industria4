@@ -6,7 +6,6 @@ import { SplitText } from "gsap/SplitText";
 
 import NavBar from "./sections/NavBar";
 import Hero from "./sections/Hero";
-import TechTicker from "./components/TechTicker";
 import Introduction from "./sections/Introduction";
 import Logistics from "./sections/Logistics";
 import Cases from "./sections/Cases";
@@ -18,12 +17,31 @@ gsap.registerPlugin(ScrollTrigger, ScrollSmoother, SplitText);
 
 function App() {
   useGSAP(() => {
-    ScrollSmoother.create({
+    const smoother = ScrollSmoother.create({
       wrapper: "#smooth-wrapper",
       content: "#smooth-content",
       smooth: 1.4,
+      smoothTouch: 0.1, // Garante rolagem tátil fluida sem travamento no Safari iOS / Android
       effects: true,
     });
+
+    // Intercepta cliques de âncoras para rolagem com ScrollSmoother em todos os navegadores
+    const handleAnchorClick = (e) => {
+      const anchor = e.target.closest('a[href^="#"]');
+      if (!anchor) return;
+
+      const targetId = anchor.getAttribute("href");
+      if (targetId && targetId !== "#") {
+        const targetElement = document.querySelector(targetId);
+        if (targetElement) {
+          e.preventDefault();
+          smoother.scrollTo(targetElement, true, "top 80px");
+        }
+      }
+    };
+
+    document.addEventListener("click", handleAnchorClick);
+    return () => document.removeEventListener("click", handleAnchorClick);
   });
 
   return (
